@@ -3,7 +3,7 @@ import React from 'react';
 
 const getWorkouts = async () => {
   try {
-        const res = await fetch("https://api.api.workers.dev/api/fitlog/${id}",
+        const res = await fetch("https://api.api-store.workers.dev/api/fitlog",
             {
                 cache: "force-cache",
             }

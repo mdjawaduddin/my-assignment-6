@@ -13,7 +13,7 @@ import SavedButton from "@/components/workoutDetails/SavedButton";
 const getWorkouts = async () => {
     try {
         const res = await fetch(
-            "https://api.api.workers.dev/api/fitlog/${id}",
+            "https://api.api-store.workers.dev/api/fitlog/${id}",
             {
                 cache: "no-store",
             }
