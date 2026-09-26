@@ -3,7 +3,7 @@ import MyPlanContent from "@/components/MyPlanContent";
 
 const getWorkouts = async () => {
     try {
-        const res = await fetch("https://api.abcz-store.workers.dev/api/fitlog",
+        const res = await fetch("https://api.api-store.workers.dev/api/fitlog",
             {
                 cache: "force-cache",
             }
