@@ -22,9 +22,7 @@ const MyPlanContent = ({ workouts }) => {
     const [sortBy, setSortBy] = useState("duration");
 
 
-    /*
-      Convert workout IDs into full workout objects
-    */
+
 
     const plan = workouts.filter((workout) =>
         addWorkouts.includes(workout.id)
@@ -35,9 +33,7 @@ const MyPlanContent = ({ workouts }) => {
     );
 
 
-    /*
-      Decide which tab is currently active
-    */
+
 
     let currentWorkouts;
 
@@ -48,16 +44,9 @@ const MyPlanContent = ({ workouts }) => {
     }
 
 
-    /*
-      Make a copy before sorting
-    */
-
     let sortedWorkouts = [...currentWorkouts];
 
 
-    /*
-      Sorting
-    */
 
     if (sortBy === "duration") {
 
@@ -69,7 +58,7 @@ const MyPlanContent = ({ workouts }) => {
 
         sortedWorkouts.sort(
             (a, b) =>
-                b.caloriesBurned - a.caloriesBurned
+                a.caloriesBurned - b.caloriesBurned
         );
 
     } else if (sortBy === "rating") {
@@ -80,10 +69,6 @@ const MyPlanContent = ({ workouts }) => {
     }
 
 
-    /*
-      Calculate statistics
-      according to the active tab
-    */
 
     const totalExercises = currentWorkouts.length;
 
@@ -100,9 +85,7 @@ const MyPlanContent = ({ workouts }) => {
     );
 
 
-    /*
-      Remove workout from Today's Plan
-    */
+
 
     const removeFromPlan = (id) => {
 
@@ -114,9 +97,7 @@ const MyPlanContent = ({ workouts }) => {
     };
 
 
-    /*
-      Remove workout from Saved
-    */
+
 
     const removeFromSaved = (id) => {
 
@@ -133,7 +114,6 @@ const MyPlanContent = ({ workouts }) => {
 
             <div className="container mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-0">
 
-                {/* PAGE TITLE */}
 
                 <div className="mb-7">
 
@@ -149,11 +129,9 @@ const MyPlanContent = ({ workouts }) => {
                 </div>
 
 
-                {/* METRICS */}
 
                 <div className="mb-8 grid grid-cols-1 overflow-hidden rounded-xl border border-white/10 bg-[#15171c] sm:grid-cols-3">
 
-                    {/* Exercises */}
 
                     <div className="border-b border-white/10 px-5 py-4 sm:border-b-0 sm:border-r">
 
@@ -168,7 +146,6 @@ const MyPlanContent = ({ workouts }) => {
                     </div>
 
 
-                    {/* Minutes */}
 
                     <div className="border-b border-white/10 px-5 py-4 sm:border-b-0 sm:border-r">
 
@@ -183,7 +160,6 @@ const MyPlanContent = ({ workouts }) => {
                     </div>
 
 
-                    {/* Calories */}
 
                     <div className="px-5 py-4">
 
@@ -200,11 +176,9 @@ const MyPlanContent = ({ workouts }) => {
                 </div>
 
 
-                {/* TABS + SORT */}
 
                 <div className="mb-7 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
 
-                    {/* TABS */}
 
                     <div className="flex w-fit rounded-xl bg-[#1b1d21] p-1">
 
@@ -236,13 +210,12 @@ const MyPlanContent = ({ workouts }) => {
                     </div>
 
 
-                    {/* SORT */}
+                    <fieldset className="fieldset w-medium sm:w-56">
 
-                    <div className="w-full sm:w-56">
 
-                        <label className="mb-1 block text-sm text-gray-300">
+                        <legend className="mb-1 block text-sm text-gray-300">
                             Sort By
-                        </label>
+                        </legend>
 
                         <div className="relative">
 
@@ -275,21 +248,19 @@ const MyPlanContent = ({ workouts }) => {
                             />
 
                         </div>
+                    </fieldset>
 
-                    </div>
 
                 </div>
 
 
-                {/* WORKOUT CARDS */}
 
                 <div className="space-y-4">
 
                     {sortedWorkouts.length === 0 ? (
 
-                        /* EMPTY STATE */
 
-                        <div className="flex min-h-64 flex-col items-center justify-center rounded-2xl border-da border-white/10 bg-[#15171c] px-5 py-12 text-center">
+                        <div className="flex min-h-64 flex-col items-center justify-center rounded-2xl border border-dashed border-white/10 bg-[#15171c] px-5 py-12 text-center">
 
                             <p className="text-2xl font-extrabold text-white">
                                 NOTHING HERE YET

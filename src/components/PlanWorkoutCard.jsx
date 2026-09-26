@@ -156,9 +156,7 @@ const PlanWorkoutCard = ({
     };
 
 
-    /*
-      Remove workout
-    */
+ 
 
     const handleRemove = () => {
 
@@ -200,7 +198,6 @@ const PlanWorkoutCard = ({
                 </div>
 
 
-                {/* WORKOUT INFORMATION */}
 
                 <div className="min-w-0 flex-1">
 
@@ -213,7 +210,6 @@ const PlanWorkoutCard = ({
                     </p>
 
 
-                    {/* STATS */}
 
                     <div className="mt-3 flex flex-wrap items-center gap-4 text-sm text-gray-300">
 
@@ -255,12 +251,10 @@ const PlanWorkoutCard = ({
                 </div>
 
 
-                {/* BUTTONS */}
 
                 <div className="flex w-full flex-wrap items-center gap-2 lg:w-auto lg:justify-end">
 
 
-                    {/* VIEW DETAILS */}
 
                     <Link
                         href={`/workout/${workout.id}`}
@@ -270,7 +264,6 @@ const PlanWorkoutCard = ({
                     </Link>
 
 
-                    {/* MARK AS DONE */}
 
                     {!isSaved && (
 
@@ -288,12 +281,10 @@ const PlanWorkoutCard = ({
                     )}
 
 
-                    {/* REMOVE */}
 
                     <button
                         onClick={handleRemove}
-                        aria-label="Remove workout"
-                        className="flex h-10 w-10 items-center justify-center rounded-full text-gray-300 hover:bg-red-500/10 hover:text-red-500"
+                        className=" flex h-10 w-10 items-center justify-center rounded-full text-gray-300 hover:bg-red-500/10 hover:text-red-500"
                     >
 
                         <LuX size={20} />
