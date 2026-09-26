@@ -2,10 +2,25 @@ import WorkoutCard from '@/components/WorkoutCard';
 import React from 'react';
 
 const getWorkouts = async () => {
-    const res = await fetch('https://api.abcz.workers.dev/api/fitlog');
-    const data = await res.json();
-    return data;
-}
+  try {
+        const res = await fetch("https://api.api-store.workers.dev/api/fitlog",
+            {
+                cache: "force-cache",
+            }
+        );
+
+        if (!res.ok) {
+            return [];
+        }
+
+        const data = await res.json();
+
+        return data;
+    } catch (error) {
+        console.error("Error fetching workouts:", error);
+        return [];
+    }
+};
 
 const Workouts = async () => {
     const workoutsData = await getWorkouts();
