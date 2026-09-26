@@ -5,7 +5,7 @@ import logo from '@/assets/logo.png';
 
 const Footer = () => {
     return (
-        <div className=" max-w-7xl mx-auto container flex justify-between items-center gap-auto py-5 -mt-3">
+        <div className=" max-w-6xl mx-auto container flex justify-between items-center gap-auto py-5 -mt-3">
            <div className="flex items-center gap-2">
              <Image src={logo} alt="Logo" width={20} height={20}/> <span> FITLOG</span> 
           

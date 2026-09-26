@@ -10,7 +10,7 @@ const getWorkouts = async () => {
 const Workouts = async () => {
     const workoutsData = await getWorkouts();
     return (
-        <div className=" max-w-7xl mx-auto container my-16" >
+        <div className=" max-w-6xl mx-auto container my-16" >
             <h1 className="text-3xl font-bold">The Library</h1>
             <p className="text-[#9CA3AF]">
                 Twelve lifts covering every major muscle group.

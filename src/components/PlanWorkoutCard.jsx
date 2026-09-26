@@ -142,8 +142,7 @@ const PlanWorkoutCard = ({
 
                     <Link
                         href={`/workout/${workout.id}`}
-                        className="rounded-full border border-gray-400 px-4 py-2 text-center text-sm font-semibold text-white hover:border-[#b7f000] hover:text-[#b7f000]"
-                    >
+                        className="rounded-full border border-white bg-mist-900 px-4 py-2 text-center text-sm font-semibold text-white hover:border-transparent" >
                         View Details
                     </Link>
 
@@ -168,7 +167,7 @@ const PlanWorkoutCard = ({
 
                     <button
                         onClick={handleRemove}
-                        className=" flex cursor-pointer h-10 w-10 items-center justify-center rounded-full text-gray-300 hover:bg-red-500/10 hover:text-red-500"
+                        className=" flex cursor-pointer h-10 w-10 items-center justify-center rounded-full text-gray-300 hover:bg-mist-900 "
                     >
 
                         <LuX size={20} />

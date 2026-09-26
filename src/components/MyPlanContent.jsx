@@ -210,7 +210,7 @@ const MyPlanContent = ({ workouts }) => {
                     </div>
 
 
-                    <fieldset className="fieldset w-medium sm:w-56">
+                    <fieldset className="fieldset w-full sm:w-56">
 
 
                         <legend className="mb-1 block text-sm text-gray-300">
@@ -226,7 +226,7 @@ const MyPlanContent = ({ workouts }) => {
                                         event.target.value
                                     )
                                 }
-                                className="w-full appearance-none rounded-xl border border-white/20 bg-[#0f1012] px-4 py-3 text-sm text-white outline-none focus:border-[#b7f000]"
+                                className="w-full appearance-none rounded-xl border border-white/20 bg-[#0f1012] px-4 py-3 text-sm text-white outline-none focus:border-white "
                             >
 
                                 <option value="duration">
