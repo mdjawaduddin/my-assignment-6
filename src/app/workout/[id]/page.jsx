@@ -37,7 +37,7 @@ const WorkoutDetailsPage = async ({ params }) => {
     const data = await getWorkouts();
 
     const workout = data.find(
-        (workout) => Number(workout.id) === Number(id)
+        (workout) => String(workout.id) === String(id)
     );
 
 
