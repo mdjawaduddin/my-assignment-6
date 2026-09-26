@@ -1,29 +1,38 @@
+Project Name:
+
 FITLOG — Workout Library
 
-Short Description
+Short Description:
 FitLog is a responsive workout library where users can explore exercises, view details, create a workout plan, and save workouts for later.
 
-Technologies Used
+Technologies Used:
 
-Next.js
-React.js
-Next.js App Router
-Tailwind CSS
-DaisyUI
-React Icons
-React Toastify
+1.Next.js
 
-5 Key Features
+2.React.js
 
-Workout Library — Browse workouts with images, muscle groups, duration, calories, and ratings.
+3.Next.js App Router
 
-Workout Details — View complete information and instructions for each workout.
+4.Tailwind CSS
 
-Today's Plan — Add, complete, and remove workouts from your daily plan.
+5.DaisyUI
 
-Save Workouts — Save workouts for later and manage them from the Saved tab.
+6.React Icons
 
-Responsive Design — Fully responsive layout for desktop, tablet, and mobile.
+7.React Toastify
+
+
+5 Key Features:
+
+1.Workout Library — Browse workouts with images, muscle groups, duration, calories, and ratings.
+
+2.Workout Details — View complete information and instructions for each workout.
+
+3.Today's Plan — Add, complete, and remove workouts from your daily plan.
+
+4.Save Workouts — Save workouts for later and manage them from the Saved tab.
+
+5.Responsive Design — Fully responsive layout for desktop, tablet, and mobile.
 
 
 
