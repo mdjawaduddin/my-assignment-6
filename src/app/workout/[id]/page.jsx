@@ -60,7 +60,7 @@ const WorkoutDetailsPage = async ({ params }) => {
                             alt={workout.name}
                             width={600}
                             height={800}
-                            className="h-125 w-full object-cover lg:h-[635px]"
+                            className="h-full w-full object-cover lg:h-[760px]"
                         />
 
                     </div>
