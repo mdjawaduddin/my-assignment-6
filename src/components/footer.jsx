@@ -11,7 +11,7 @@ const Footer = () => {
           
            </div>
             <div>
-                <p className=" text-[#6B7280]">© 2026 FitLog — Workout Library. Train hard, log honest.</p>
+                <p className=" text-[#6B7280] items-center">© 2026 FitLog — Workout Library. Train hard, log honest.</p>
             </div>
         </div>
     );
