@@ -10,10 +10,10 @@ import AddButton from "@/components/workoutDetails/AddButton";
 import SavedButton from "@/components/workoutDetails/SavedButton";
 
 
-const getWorkouts = async () => {
+const getWorkouts = async (id) => {
     try {
         const res = await fetch(
-            "https://api.api-store.workers.dev/api/fitlog/${id}",
+            `https://api.api-store.workers.dev/api/fitlog/${id}`,
             {
                 cache: "no-store",
             }
