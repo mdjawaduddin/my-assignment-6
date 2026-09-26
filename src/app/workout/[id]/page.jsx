@@ -13,7 +13,7 @@ import SavedButton from "@/components/workoutDetails/SavedButton";
 const getWorkouts = async (id) => {
     try {
         const res = await fetch(
-            `https://api.api-store.workers.dev/api/fitlog/${id}`,
+            `https://api.api-store.workers.dev/api/fitlog`,
             {
                 cache: "no-store",
             }
@@ -25,7 +25,7 @@ const getWorkouts = async (id) => {
 
     } catch (error) {
         console.error("Error fetching workout details:", error);
-        return [];
+        return null;
     }
 };
 
